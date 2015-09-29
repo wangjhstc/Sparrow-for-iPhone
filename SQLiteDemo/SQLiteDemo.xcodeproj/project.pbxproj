@@ -16,6 +16,10 @@
 		8A5166FA1B787E5C0023E391 /* SQLiteDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5166F91B787E5C0023E391 /* SQLiteDemoTests.m */; };
 		8A5167041B787F260023E391 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8A5167031B787F260023E391 /* README.md */; };
 		8A5167081B7881910023E391 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5167051B7881750023E391 /* libsqlite3.dylib */; };
+		8A51670B1B79D53C0023E391 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A51670A1B79D53C0023E391 /* OneViewController.m */; };
+		8A51670E1B79D55D0023E391 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A51670D1B79D55D0023E391 /* TwoViewController.m */; };
+		8A5167111B79D7890023E391 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5167101B79D7890023E391 /* ThreeViewController.m */; };
+		8A5167141B79DB830023E391 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5167131B79DB830023E391 /* FourViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,14 @@
 		8A5166F91B787E5C0023E391 /* SQLiteDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteDemoTests.m; sourceTree = "<group>"; };
 		8A5167031B787F260023E391 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8A5167051B7881750023E391 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8A5167091B79D53C0023E391 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		8A51670A1B79D53C0023E391 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		8A51670C1B79D55D0023E391 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		8A51670D1B79D55D0023E391 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		8A51670F1B79D7890023E391 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		8A5167101B79D7890023E391 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		8A5167121B79DB830023E391 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		8A5167131B79DB830023E391 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,14 @@
 				8A5166EA1B787E5C0023E391 /* Images.xcassets */,
 				8A5166EC1B787E5C0023E391 /* LaunchScreen.xib */,
 				8A5166DD1B787E5C0023E391 /* Supporting Files */,
+				8A5167091B79D53C0023E391 /* OneViewController.h */,
+				8A51670A1B79D53C0023E391 /* OneViewController.m */,
+				8A51670C1B79D55D0023E391 /* TwoViewController.h */,
+				8A51670D1B79D55D0023E391 /* TwoViewController.m */,
+				8A51670F1B79D7890023E391 /* ThreeViewController.h */,
+				8A5167101B79D7890023E391 /* ThreeViewController.m */,
+				8A5167121B79DB830023E391 /* FourViewController.h */,
+				8A5167131B79DB830023E391 /* FourViewController.m */,
 			);
 			path = SQLiteDemo;
 			sourceTree = "<group>";
@@ -235,7 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A5166E61B787E5C0023E391 /* ViewController.m in Sources */,
+				8A5167111B79D7890023E391 /* ThreeViewController.m in Sources */,
+				8A5167141B79DB830023E391 /* FourViewController.m in Sources */,
+				8A51670B1B79D53C0023E391 /* OneViewController.m in Sources */,
 				8A5166E31B787E5C0023E391 /* AppDelegate.m in Sources */,
+				8A51670E1B79D55D0023E391 /* TwoViewController.m in Sources */,
 				8A5167041B787F260023E391 /* README.md in Sources */,
 				8A5166E01B787E5C0023E391 /* main.m in Sources */,
 			);
@@ -432,6 +456,7 @@
 				8A5166FF1B787E5C0023E391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A5167001B787E5C0023E391 /* Build configuration list for PBXNativeTarget "SQLiteDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +465,7 @@
 				8A5167021B787E5C0023E391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

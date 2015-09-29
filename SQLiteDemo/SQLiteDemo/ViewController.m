@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <sqlite3.h>
 
+#import "OneViewController.h"
+
 @interface ViewController ()
 {
     sqlite3 *db;
@@ -18,14 +20,46 @@
 
 @implementation ViewController
 
+//+ (instancetype)shareInstance {
+//    static ViewController *VC;
+//    static dispatch_once_t pred;
+//    dispatch_once(&pred, ^{
+//        VC = [[self alloc] init];
+//    });
+//    
+//    return VC;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 200, 70);
+    btn.backgroundColor = [UIColor brownColor];
+    [btn setTitle:@"ViewControl" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(persentView) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (void)persentView {
+    
+    OneViewController *oneVC = [OneViewController shareInstance];
+    UINavigationController *control = [[UINavigationController alloc] initWithRootViewController:oneVC];
+//    [self.navigationController pushViewController:control animated:YES];
+    [self presentViewController:control animated:YES completion:nil];
+    
+    
+//    OneViewController *oneVC = [OneViewController shareInstance];
+//    
+//    [self presentViewController:oneVC animated:YES completion:nil];
+}
+
+
 
 - (void)openDB {
     
