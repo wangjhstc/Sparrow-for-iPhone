@@ -58,4 +58,13 @@ static OneViewController *oneVC;
 
 
 
+- (void)setName:(NSString *)name {
+    
+}
+
+- (void)setUserClassName:(NSString *)name {
+    
+}
+
+
 @end
